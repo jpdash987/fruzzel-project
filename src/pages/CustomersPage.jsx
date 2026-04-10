@@ -67,7 +67,6 @@ function FieldDriverTab() {
   };
 
   const handleDelete = async (id, name) => {
-    if (!window.confirm(`Delete field driver "${name}"? This will also delete all related items and entries.`)) return;
     try {
       await deleteCustomer(id);
       showToast('Field driver deleted');
@@ -196,7 +195,6 @@ function FrameSellerTab() {
   };
 
   const handleDelete = async (id, name) => {
-    if (!window.confirm(`Delete frame seller "${name}"?`)) return;
     try {
       await deleteFrameSeller(id);
       showToast('Frame seller deleted');

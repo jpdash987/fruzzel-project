@@ -98,7 +98,6 @@ function PItemTab() {
   };
 
   const handleDelete = async (id, name) => {
-    if (!window.confirm(`Delete item "${name}"?`)) return;
     try {
       await deleteItem(id);
       showToast('Item deleted');
@@ -244,7 +243,6 @@ function FrameTab() {
   };
 
   const handleDelete = async (id, name) => {
-    if (!window.confirm(`Delete frame "${name}"?`)) return;
     try {
       await deleteFrame(id);
       showToast('Frame deleted');
